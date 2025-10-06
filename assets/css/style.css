@@ -2911,41 +2911,26 @@ textarea.form-input::-webkit-resizer {
   .footer-social-link { width:38px; height:38px; }
 }
 
-/* Touch-only: prevent sticky tap highlights and remove touch-only active/focus visuals.
-   Scoped to coarse-pointer / no-hover devices so keyboard users still get focus outlines. */
+/* Touch-only: remove tap highlight and suppress persistent focus outlines on touch devices */
 @media (hover: none) and (pointer: coarse) {
-  /* Remove the colored tap highlight and disable iOS callout on long-press */
-  html, body, a, button, input, textarea, [role="button"] {
+  html, body {
+    -webkit-tap-highlight-color: transparent; /* iOS/Android tap highlight */
+  }
+
+  /* Common interactive elements used in your site */
+  a, button, input, textarea, [role="button"] {
     -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none;
-    touch-action: manipulation; /* improves responsiveness on interactive elements */
-  }
-
-  /* Prevent accidental text selection on long-press for common interactive pieces */
-  /* Narrowed to the interactive classes used in this project to reduce side-effects */
-  a, button, .form-btn, .project-link, .blog-post-item, [role="button"] {
-    -webkit-user-select: none;
-    user-select: none;
-  }
-
-  /* Neutralize persistent visual states (active/focus) that can look 'stuck' on touch devices.
-     Because this is inside the touch-only media query, keyboard users retain outlines on desktop. */
-  a:active, a:focus, button:active, button:focus,
-  .form-btn:active, .form-btn:focus, .project-link:active, .project-link:focus,
-  [role="button"]:active, [role="button"]:focus {
+    -webkit-user-select: none; /* optional: avoid accidental text selection on long-press */
     outline: none !important;
     box-shadow: none !important;
-    -webkit-box-shadow: none !important;
-    background-color: transparent !important;
-    color: inherit !important;
-    transform: none !important;
   }
 
-  /* Prevent images / icons from picking up unwanted transform/press visuals */
-  img, svg {
-    -webkit-tap-highlight-color: transparent;
-    -webkit-user-drag: none;
-    transform: none !important;
+  /* Ensure active/focus styles don't leave a visible colored state */
+  a:active, button:active, a:focus, button:focus, input:focus, textarea:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: transparent !important; /* neutralize any UA active background */
+    color: inherit !important;
   }
 }
 
