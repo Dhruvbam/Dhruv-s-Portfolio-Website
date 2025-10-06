@@ -2943,6 +2943,6 @@ textarea.form-input::-webkit-resizer {
   img, svg {
     -webkit-tap-highlight-color: transparent;
     -webkit-user-drag: none;
-    transform: none !important;
+    /* transform: none !important; */
   }
 }
