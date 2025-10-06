@@ -2910,3 +2910,21 @@ textarea.form-input::-webkit-resizer {
   .footer-bottom .footer-copy { order:1; }
   .footer-social-link { width:38px; height:38px; }
 }
+
+/* Touch-only: prevent sticky tap highlights and remove touch-only active/focus visuals.
+   Scoped to coarse-pointer / no-hover devices so keyboard users still get focus outlines. */
+@media (hover: none) and (pointer: coarse) {
+  /* Remove the colored tap highlight and disable iOS callout on long-press */
+  html, body, a, button, input, textarea, [role="button"] {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    touch-action: manipulation; /* improves responsiveness on interactive elements */
+  }
+
+  /* Prevent accidental text selection on long-press for common interactive pieces */
+  /* Narrowed to the interactive classes used in this project to reduce side-effects */
+  a, button, .form-btn, .project-link, .blog-post-item, [role="button"] {
+    -webkit-user-select: none;
+    user-select: none;
+  }
+}
