@@ -634,6 +634,43 @@ document.addEventListener("DOMContentLoaded", () => {
 })();
 
 
+// --- Touch-only fixes: blur touched controls and pause marquees while touched ---
+(function () {
+  if (!('ontouchstart' in window)) return; // only run on touch-capable devices
+
+  // Blur touched interactive elements so they don't stay visually 'pressed'
+  document.addEventListener('touchend', function (ev) {
+    try {
+      var el = ev.target.closest && ev.target.closest('a, button, input, textarea, [role="button"], .form-btn, .nav-btn, .project-link');
+      if (!el) return;
+      setTimeout(function () {
+        try { el.blur && el.blur(); } catch (e) {}
+        if (el && el.style) el.style.transform = 'none';
+      }, 0);
+    } catch (err) { /* noop */ }
+  }, { passive: true });
+
+  // Pause marquees while user is touching them (so they behave like hover-pause)
+  var marquees = document.querySelectorAll('.marquee[data-pause]');
+  marquees.forEach(function (m) {
+    m.addEventListener('touchstart', function () { m.classList.add('is-paused'); }, { passive: true });
+    m.addEventListener('touchend', function () { setTimeout(function () { m.classList.remove('is-paused'); }, 80); }, { passive: true });
+    m.addEventListener('touchcancel', function () { m.classList.remove('is-paused'); }, { passive: true });
+  });
+
+  // Clear focus when user scrolls away (prevents sticky focus after scroll)
+  var scrollClear;
+  window.addEventListener('scroll', function () {
+    clearTimeout(scrollClear);
+    scrollClear = setTimeout(function () {
+      try { document.activeElement && document.activeElement.blur(); } catch (e) {}
+    }, 120);
+  }, { passive: true });
+
+})();
+
+
+
 
 
 
