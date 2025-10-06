@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dhruv Maniar - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/Memoji.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+<aside class="sidebar" data-sidebar>
+
+<div class="sidebar-info">
+  <a href="https://www.fastfol.io/dhruv" target="_blank" rel="noopener noreferrer" title="Click me!">
+    <figure class="avatar-box">
+      <img src="./assets/images/Memoji.png" alt="Dhruv Maniar" width="80">
+      <span class="active-status" title="Available for work!"></span>
+    </figure>
+  </a>
+
+  <div class="info-content">
+    <h1 class="name" title="Dhruv Maniar">Dhruv Maniar</h1>
+    <p class="title">Computer Scientist & Developer</p>
+  </div>
+  <button class="info_more-btn" data-sidebar-btn>
+    <span>Show</span>
+    <ion-icon name="chevron-down"></ion-icon>
+  </button>
+</div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <!-- contact details moved to the Contact page; kept sidebar concise -->
+
+        <div class="sidebar-bio">
+          <p class="bio-text" title="Quote by Confucius">Simplicity, carried to the extreme, becomes elegance.</p>
+        </div>
+
+        <div class="separator"></div>
+
+        <!-- quick actions (email + resume) -->
+        <!-- <div class="sidebar-actions">
+          <a class="sidebar-btn" href="mailto:dmaniar@ttu.edu" aria-label="Email Dhruv">
+            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+            <span>Mail Me</span>
+          </a>
+          <a class="sidebar-btn" href="./assets/files/Full Resume.pdf" target="_blank" rel="noopener" aria-label="Download Resume">
+            <ion-icon name="download-outline" aria-hidden="true"></ion-icon>
+            <span>Resume</span>
+          </a>
+        </div> -->
+
+        <!-- timezone / location tag -->
+  <div id="contact-location-shortcut" class="timezone-tag" aria-label="Current location and timezone. Click to view contact details" role="button" tabindex="0">Lubbock, TX • CST/CDT</div>
+
+        <!-- mini skills list -->
+        <!-- <ul class="mini-skill-tags" aria-label="Top skills">
+          <li>Python</li>
+          <li>Unity</li>
+          <li>AI</li>
+          <li>Cloud</li>
+        </ul> -->
+
+        <div class="separator"></div>
+
+        
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/dhruvmaniar/" target="_blank" class="social-link" aria-label="LinkedIn Profile" title="LinkedIn" data-tooltip="Visit LinkedIn Profile">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://github.com/Dhruvbam" target="_blank" class="social-link" aria-label="GitHub Profile" title="GitHub" data-tooltip="Visit GitHub Profile">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="mailto:dmaniar@ttu.edu" class="social-link" aria-label="Email Dhruv" title="Email Me" data-tooltip="Email Me">
+              <ion-icon name="mail"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="./assets/files/Full Resume.pdf" target="_blank" rel="noopener" class="social-link" aria-label="Download Full Resume" title="Download Full Resume" data-tooltip="Download Full Resume">
+              <ion-icon name="document"></ion-icon>
+            </a>
+          </li>
+        </ul>
+        
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Hobbies</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+I’m Dhruv, a student of Computer Science and Mathematics at Texas Tech, originally hailing from hills of Lonavala, India. My fascination with technology began early, dissecting games and devices to uncover the ingenuity within.         
+          </p>
+
+          <p>
+            Now, I devote that curiosity to crafting thoughtful solutions through code. I am driven by a passion for harnessing technology as a catalyst for meaningful change, elevating everyday life with innovation and purpose
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Making Ideas Happen</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/game.png" alt="Game Development icon" width="60">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Game Innovation</h4>
+
+                <p class="service-item-text">
+                  Bringing worlds to life in Unity using C#, blending storytelling with intelligent AI systems for games that think, adapt, and surprise.
+                </p>
+              </div>
+
+            </li>
+            
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/cloud.png" alt="Web development icon" width="60">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Cloud Solutions</h4>
+
+                <p class="service-item-text">
+                  Exploring cloud technology to improve workflows, enhance security, and deliver innovative, scalable digital services.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/datascience.png" alt="design icon" width="88">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Science Insights</h4>
+
+                <p class="service-item-text">
+                  Leveraging data analysis and signal processing to uncover patterns, draw meaningful conclusions, and power data driven decision making.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/mobileai.png" alt="AI Development icon" width="66">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">AI Development</h4>
+
+                <p class="service-item-text">
+                  Exploring intelligent systems and practical machine learning to solve modern challenges with innovative, real world AI applications.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+         <!-- <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>  -->
+
+
+        <!--
+          - #testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div> 
+
+        <!--
+          - clients (skills)
+        -->
+
+        
+
+        <!-- <section class="clients">
+
+          <h3 class="h3 clients-title">Skills</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="https://dart.dev/" target="_blank">
+                <img src="./assets/skills/Dart.svg" alt="client logo" style="filter: none;">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://flutter.dev/" target="_blank">
+                <img src="./assets\skills\Flutter.svg" alt="client logo" >
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://firebase.google.com/" target="_blank">
+                <img src="./assets\skills\Firebase.svg" alt="client logo" >
+              </a>
+            </li>
+
+
+            <li class="clients-item">
+              <a href="https://www.postman.com/" target="_blank">
+                <img src="./assets/skills/Postman.svg" alt="client logo" >
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://www.figma.com/" target="_blank">
+                <img src="./assets/skills/Figma.svg" alt="client logo" >
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://developer.android.com/studio" target="_blank">
+                <img src="./assets/skills/AndroidStudio.svg" alt="client logo" >
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://developer.apple.com/xcode/" target="_blank">
+                <img src="./assets/skills/Xcode.svg" alt="client logo" >
+              </a>
+            </li>
+
+        </section> -->
+
+      </article>
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title"><a href="https://www.ttu.edu/" target="_blank" rel="noopener noreferrer">Texas Tech University</a></h4>
+              <p class="timeline-text">Bachelor of Science in Computer Science, Minor in Mathematics Presidential Merit Scholarship Recipient & Dean’s Honor List.</p>
+              <span>2020 — 2025</span>
+              <div class="resume-btns" >
+                <button class="form-btn"  type="button" data-form-btn onclick="window.open('./assets/files/TTU/ttumerits.pdf')">
+                  <ion-icon name="document-text-outline"></ion-icon>
+                  <span>Merits and Honors</span>
+                </button>
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title"><a href="https://cathedral-school.com/" target="_blank" rel="noopener noreferrer">Cathedral Vidya School, Lonavala</a></h4>
+              <p class="timeline-text">International Baccalaureate Diploma. Distinguished Academic & Extracurricular Achiever.<br>
+                Merit Scholarship, IB Diploma, Academic Excellence, IGCSE Distinction, Asset Performance.
+              </p>
+              <span>2012 — 2020</span>
+              <div class="resume-btns">
+                <button class="form-btn" type="button" data-form-btn onclick="window.open('./assets/files/CVSL/cvslmerits.pdf')">
+                  <ion-icon name="document-text-outline"></ion-icon>
+                  <span>Accolades and Scholarships</span>
+                </button>
+                <button class="form-btn" type="button" data-form-btn onclick="window.open('./assets/files/CVSL/cvslacad.pdf')">
+                  <ion-icon name="document-text-outline"></ion-icon>
+                  <span>Academic Qualifications</span>
+                </button>
+              </div>
+            </li>
+
+          </ol>
+
+        </section>
+
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Experience</h3>
+          </div>
+        
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title"><a href="https://www.depts.ttu.edu/provost/aiss/first-gen/" target="_blank" rel="noopener noreferrer">Marketing and Social Media Student Assistant</a></h4>
+              <p class="timeline-text">Texas Tech University, First-Generation Transition and Mentoring Program. Developed and implemented digital marketing campaigns for campus events, creating engaging content. Analyzed marketing trends to provide actionable insights.</p>
+              <span>2023 — 2024</span>
+              <div class="resume-btns">
+                <button class="form-btn" type="button" data-form-btn onclick="window.open('./assets/files/TTU/First-Gen Letter of Recommendation.pdf')">
+                  <ion-icon name="document-text-outline"></ion-icon>
+                  <span>Recommendation Letter</span>
+                </button>
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title"><a href="https://www.depts.ttu.edu/housing/" target="_blank" rel="noopener noreferrer">Guest Service Specialist</a></h4>
+              <p class="timeline-text">Texas Tech University Housing. Delivered comprehensive customer service, managed queries, and ensured efficient operations. Handled mail, packages, keys, and equipment with strict adherence to guidelines.</p>
+              <span>2021 — 2022</span>
+            </li>
+
+          </ol>
+        </section>
+
+        <div class="separator"></div>
+
+
+        <!--
+          - Skills
+        -->
+
+         <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web design</h5>
+                <data value="88">88%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 88%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Pyhton</h5>
+                <data value="84">84%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 84%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">C/C++</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">AI Tools</h5>
+                <data value="94">96%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 94%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section> 
+        <br>
+        <div class="resume-btns"> 
+          <button class="form-btn" type="button" data-form-btn onclick="window.open('./assets/files/TTU/GDC.pdf')">
+            <ion-icon name="document-text-outline"></ion-icon>
+            <span>Google UX/UI Design</span>
+          </button>
+          <button class="form-btn" type="button" data-form-btn onclick="window.open('./assets/files/Skills/Udemy python.pdf')">
+            <ion-icon name="document-text-outline"></ion-icon>
+            <span>100 Days of Python</span>
+          </button>
+          <button class="form-btn" type="button" data-form-btn onclick="window.open('./assets/files/Skills/Webdev.pdf')">
+            <ion-icon name="document-text-outline"></ion-icon>
+            <span>Full-Stack WebDev</span>
+          </button>
+          <button class="form-btn" type="button" data-form-btn onclick="window.open('./assets/files/Full Resume.pdf')">
+            <ion-icon name="document-text-outline"></ion-icon>
+            <span>My Full Resume</span>
+          </button>
+        </div>
+      
+        <br>
+ 
+
+        <!--
+          - Clients
+        -->
+
+<!-- Skills/Clients marquees (three rows) -->
+
+<!-- 1. Programming Languages & Frameworks -->
+<h3 class="h3 skills-title marquee-heading">&nbsp;&nbsp;Programming Languages &amp; Frameworks</h3>
+<div class="marquee" data-pause style="--duration: 20s; --gap: 3rem;">
+  <div class="marquee__track">
+    <div class="marquee__group">
+      <img src="./assets/skills/python.svg" alt="Python" loading="eager" decoding="async" data-tooltip="Python">
+      <img src="./assets/skills/java.svg" alt="Java" loading="eager" decoding="async" data-tooltip="Java">
+      <img src="./assets/skills/kotlin.svg" alt="Kotlin" loading="eager" decoding="async" data-tooltip="Kotlin">
+      <img src="./assets/skills/cplus.svg" alt="C++" loading="eager" decoding="async" data-tooltip="C++">
+      <img src="./assets/skills/c.svg" alt="C" loading="eager" decoding="async" data-tooltip="C">
+      <img src="./assets/skills/csharp.svg" alt="C#" loading="eager" decoding="async" data-tooltip="C#">
+      <img src="./assets/skills/js.svg" alt="JavaScript" loading="eager" decoding="async" data-tooltip="JavaScript">
+      <img src="./assets/skills/typescriptlang-icon.svg" alt="TypeScript" loading="eager" decoding="async" data-tooltip="TypeScript">
+      <img src="./assets/skills/r-lang.svg" alt="R" loading="eager" decoding="async" data-tooltip="R">
+      <img src="./assets/skills/ruby-lang-icon.svg" alt="Ruby" loading="eager" decoding="async" data-tooltip="Ruby">
+      <img src="./assets/skills/swift.svg" alt="Swift" loading="eager" decoding="async" data-tooltip="Swift">
+      <img src="./assets/skills/html5.svg" alt="HTML5" loading="eager" decoding="async" data-tooltip="HTML5">
+      <img src="./assets/skills/css3.svg" alt="CSS3" loading="eager" decoding="async" data-tooltip="CSS3">
+      <img src="./assets/skills/react.svg" alt="React" loading="eager" decoding="async" data-tooltip="React">
+      <img src="./assets/skills/vuejs-icon.svg" alt="Vue.js" loading="eager" decoding="async" data-tooltip="Vue.js">
+      <img src="./assets/skills/angular-icon.svg" alt="Angular" loading="eager" decoding="async" data-tooltip="Angular">
+      <img src="./assets/skills/nextjs-icon.svg" alt="Next.js" loading="eager" decoding="async" data-tooltip="Next.js">
+      <img src="./assets/skills/Bootstrap_logo.svg" alt="Bootstrap" loading="eager" decoding="async" data-tooltip="Bootstrap">
+      <img src="./assets/skills/Tailwind_CSS_Logo.svg" alt="Tailwind CSS" loading="eager" decoding="async" data-tooltip="Tailwind CSS">
+      <img src="./assets/skills/djangoproject-icon.svg" alt="Django" loading="eager" decoding="async" data-tooltip="Django">
+      <img src="./assets/skills/pocoo_jinja-icon.svg" alt="Jinja" loading="eager" decoding="async" data-tooltip="Jinja">
+      <img src="./assets/skills/dotnet-official.svg" alt=".NET" loading="eager" decoding="async" data-tooltip=".NET">
+      <img src="./assets/skills/totaljs-icon.svg" alt="Total.js" loading="eager" decoding="async" data-tooltip="Total.js">
+      <img src="./assets/skills/Node.js_logo.svg" alt="Node.js" loading="eager" decoding="async" data-tooltip="Node.js">
+      <img src="./assets/skills/Dart.svg" alt="Dart" loading="eager" decoding="async" data-tooltip="Dart">
+      <img src="./assets/skills/Flutter.svg" alt="Flutter" loading="eager" decoding="async" data-tooltip="Flutter">
+    </div>
+    <div class="marquee__group" aria-hidden="true">
+      <img src="./assets/skills/python.svg" alt="Python" loading="eager" decoding="async" data-tooltip="Python">
+      <img src="./assets/skills/java.svg" alt="Java" loading="eager" decoding="async" data-tooltip="Java">
+      <img src="./assets/skills/kotlin.svg" alt="Kotlin" loading="eager" decoding="async" data-tooltip="Kotlin">
+      <img src="./assets/skills/cplus.svg" alt="C++" loading="eager" decoding="async" data-tooltip="C++">
+      <img src="./assets/skills/c.svg" alt="C" loading="eager" decoding="async" data-tooltip="C">
+      <img src="./assets/skills/csharp.svg" alt="C#" loading="eager" decoding="async" data-tooltip="C#">
+      <img src="./assets/skills/js.svg" alt="JavaScript" loading="eager" decoding="async" data-tooltip="JavaScript">
+      <img src="./assets/skills/typescriptlang-icon.svg" alt="TypeScript" loading="eager" decoding="async" data-tooltip="TypeScript">
+      <img src="./assets/skills/r-lang.svg" alt="R" loading="eager" decoding="async" data-tooltip="R">
+      <img src="./assets/skills/ruby-lang-icon.svg" alt="Ruby" loading="eager" decoding="async" data-tooltip="Ruby">
+      <img src="./assets/skills/swift.svg" alt="Swift" loading="eager" decoding="async" data-tooltip="Swift">
+      <img src="./assets/skills/html5.svg" alt="HTML5" loading="eager" decoding="async" data-tooltip="HTML5">
+      <img src="./assets/skills/css3.svg" alt="CSS3" loading="eager" decoding="async" data-tooltip="CSS3">
+      <img src="./assets/skills/react.svg" alt="React" loading="eager" decoding="async" data-tooltip="React">
+      <img src="./assets/skills/vuejs-icon.svg" alt="Vue.js" loading="eager" decoding="async" data-tooltip="Vue.js">
+      <img src="./assets/skills/angular-icon.svg" alt="Angular" loading="eager" decoding="async" data-tooltip="Angular">
+      <img src="./assets/skills/nextjs-icon.svg" alt="Next.js" loading="eager" decoding="async" data-tooltip="Next.js">
+      <img src="./assets/skills/Bootstrap_logo.svg" alt="Bootstrap" loading="eager" decoding="async" data-tooltip="Bootstrap">
+      <img src="./assets/skills/Tailwind_CSS_Logo.svg" alt="Tailwind CSS" loading="eager" decoding="async" data-tooltip="Tailwind CSS">
+      <img src="./assets/skills/djangoproject-icon.svg" alt="Django" loading="eager" decoding="async" data-tooltip="Django">
+      <img src="./assets/skills/pocoo_jinja-icon.svg" alt="Jinja" loading="eager" decoding="async" data-tooltip="Jinja">
+      <img src="./assets/skills/dotnet-official.svg" alt=".NET" loading="eager" decoding="async" data-tooltip=".NET">
+      <img src="./assets/skills/totaljs-icon.svg" alt="Total.js" loading="eager" decoding="async" data-tooltip="Total.js">
+      <img src="./assets/skills/Node.js_logo.svg" alt="Node.js" loading="eager" decoding="async" data-tooltip="Node.js">
+      <img src="./assets/skills/Dart.svg" alt="Dart" loading="eager" decoding="async" data-tooltip="Dart">
+      <img src="./assets/skills/Flutter.svg" alt="Flutter" loading="eager" decoding="async" data-tooltip="Flutter">
+    </div>
+  </div>
+</div>
+
+<!-- 2. Databases, AI & Cloud -->
+<h3 class="h3 skills-title marquee-heading">&nbsp;&nbsp;Databases, AI &amp; Cloud</h3>
+<div class="marquee" data-pause style="--duration: 18s; --gap: 3rem;">
+  <div class="marquee__track" style="animation-direction: reverse;">
+    <div class="marquee__group">
+      <img src="./assets/skills/sqlite-icon.svg" alt="SQLite" loading="eager" decoding="async" data-tooltip="SQLite">
+      <img src="./assets/skills/postgresql-icon.svg" alt="PostgreSQL" loading="eager" decoding="async" data-tooltip="PostgreSQL">
+      <img src="./assets/skills/mysql.svg" alt="MySQL" loading="eager" decoding="async" data-tooltip="MySQL">
+      <img src="./assets/skills/sql.svg" alt="SQL" loading="eager" decoding="async" data-tooltip="SQL">
+      <img src="./assets/skills/mongodb.svg" alt="MongoDB" loading="eager" decoding="async" data-tooltip="MongoDB">
+      <img src="./assets/skills/Firebase.svg" alt="Firebase" loading="eager" decoding="async" data-tooltip="Firebase">
+      <img src="./assets/skills/numpy-icon.svg" alt="NumPy" loading="eager" decoding="async" data-tooltip="NumPy">
+      <img src="./assets/skills/tensorflow-icon.svg" alt="TensorFlow" loading="eager" decoding="async" data-tooltip="TensorFlow">
+      <img src="./assets/skills/jupyter-icon.svg" alt="Jupyter" loading="eager" decoding="async" data-tooltip="Jupyter">
+      <img src="./assets/skills/chatgpt.svg" alt="ChatGPT / OpenAI" loading="eager" decoding="async" data-tooltip="ChatGPT / OpenAI">
+      <img src="./assets/skills/aws.svg" alt="AWS" loading="eager" decoding="async" data-tooltip="AWS">
+      <img src="./assets/skills/gcp.svg" alt="Google Cloud" loading="eager" decoding="async" data-tooltip="Google Cloud">
+      <img src="./assets/skills/json-icon.svg" alt="JSON" loading="eager" decoding="async" data-tooltip="JSON">
+      <img src="./assets/skills/yaml-icon.svg" alt="YAML" loading="eager" decoding="async" data-tooltip="YAML">
+    </div>
+    <div class="marquee__group" aria-hidden="true">
+      <img src="./assets/skills/sqlite-icon.svg" alt="SQLite" loading="eager" decoding="async" data-tooltip="SQLite">
+      <img src="./assets/skills/postgresql-icon.svg" alt="PostgreSQL" loading="eager" decoding="async" data-tooltip="PostgreSQL">
+      <img src="./assets/skills/mysql.svg" alt="MySQL" loading="eager" decoding="async" data-tooltip="MySQL">
+      <img src="./assets/skills/sql.svg" alt="SQL" loading="eager" decoding="async" data-tooltip="SQL">
+      <img src="./assets/skills/mongodb.svg" alt="MongoDB" loading="eager" decoding="async" data-tooltip="MongoDB">
+      <img src="./assets/skills/Firebase.svg" alt="Firebase" loading="eager" decoding="async" data-tooltip="Firebase">
+      <img src="./assets/skills/numpy-icon.svg" alt="NumPy" loading="eager" decoding="async" data-tooltip="NumPy">
+      <img src="./assets/skills/tensorflow-icon.svg" alt="TensorFlow" loading="eager" decoding="async" data-tooltip="TensorFlow">
+      <img src="./assets/skills/jupyter-icon.svg" alt="Jupyter" loading="eager" decoding="async" data-tooltip="Jupyter">
+      <img src="./assets/skills/chatgpt.svg" alt="ChatGPT / OpenAI" loading="eager" decoding="async" data-tooltip="ChatGPT / OpenAI">
+      <img src="./assets/skills/aws.svg" alt="AWS" loading="eager" decoding="async" data-tooltip="AWS">
+      <img src="./assets/skills/gcp.svg" alt="Google Cloud" loading="eager" decoding="async" data-tooltip="Google Cloud">
+      <img src="./assets/skills/json-icon.svg" alt="JSON" loading="eager" decoding="async" data-tooltip="JSON">
+      <img src="./assets/skills/yaml-icon.svg" alt="YAML" loading="eager" decoding="async" data-tooltip="YAML">
+    </div>
+  </div>
+</div>
+
+<!-- 3. Tools, Platforms & Design -->
+<h3 class="h3 skills-title marquee-heading">&nbsp;&nbsp;Tools, Platforms &amp; Design</h3>
+<div class="marquee" data-pause style="--duration: 18s; --gap: 3rem;">
+  <div class="marquee__track">
+    <div class="marquee__group">
+      <img src="./assets/skills/git.svg" alt="Git" loading="eager" decoding="async" data-tooltip="Git">
+      <img src="./assets/skills/github-icon.svg" alt="GitHub" loading="eager" decoding="async" data-tooltip="GitHub">
+      <img src="./assets/skills/npm.svg" alt="npm" loading="eager" decoding="async" data-tooltip="npm">
+      <img src="./assets/skills/gitlab.svg" alt="GitLab" loading="eager" decoding="async" data-tooltip="GitLab">
+      <img src="./assets/skills/github_copilot-icon.svg" alt="GitHub Copilot" loading="eager" decoding="async" data-tooltip="GitHub Copilot">
+      <img src="./assets/skills/visualstudio_code-icon.svg" alt="VS Code" loading="eager" decoding="async" data-tooltip="VS Code">
+      <img src="./assets/skills/Postman.svg" alt="Postman" loading="eager" decoding="async" data-tooltip="Postman">
+      <img src="./assets/skills/docker-icon.svg" alt="Docker" loading="eager" decoding="async" data-tooltip="Docker">
+      <img src="./assets/skills/Vercel.svg" alt="Vercel" loading="eager" decoding="async" data-tooltip="Vercel">
+      <img src="./assets/skills/replit-icon.svg" alt="Replit" loading="eager" decoding="async" data-tooltip="Replit">
+      <img src="./assets/skills/gnu_bash-icon.svg" alt="Bash" loading="eager" decoding="async" data-tooltip="Bash">
+      <img src="./assets/skills/linux-icon.svg" alt="Linux" loading="eager" decoding="async" data-tooltip="Linux">
+      <img src="./assets/skills/Xcode.svg" alt="Xcode" loading="eager" decoding="async" data-tooltip="Xcode">
+      <img src="./assets/skills/Unity_Technologies_logo.svg" alt="Unity" loading="eager" decoding="async" data-tooltip="Unity">
+      <img src="./assets/skills/Figma.svg" alt="Figma" loading="eager" decoding="async" data-tooltip="Figma">
+      <img src="./assets/skills/sketchapp-icon.svg" alt="Sketch" loading="eager" decoding="async" data-tooltip="Sketch">
+      <img src="./assets/skills/tablerio-icon.svg" alt="Tabler Icons" loading="eager" decoding="async" data-tooltip="Tabler Icons">
+      <img src="./assets/skills/jsfiddle-icon.svg" alt="JSFiddle" loading="eager" decoding="async" data-tooltip="JSFiddle">
+    </div>
+    <div class="marquee__group" aria-hidden="true">
+      <img src="./assets/skills/git.svg" alt="Git" loading="eager" decoding="async" data-tooltip="Git">
+      <img src="./assets/skills/github-icon.svg" alt="GitHub" loading="eager" decoding="async" data-tooltip="GitHub">
+      <img src="./assets/skills/npm.svg" alt="npm" loading="eager" decoding="async" data-tooltip="npm">
+      <img src="./assets/skills/gitlab.svg" alt="GitLab" loading="eager" decoding="async" data-tooltip="GitLab">
+      <img src="./assets/skills/github_copilot-icon.svg" alt="GitHub Copilot" loading="eager" decoding="async" data-tooltip="GitHub Copilot">
+      <img src="./assets/skills/visualstudio_code-icon.svg" alt="VS Code" loading="eager" decoding="async" data-tooltip="VS Code">
+      <img src="./assets/skills/Postman.svg" alt="Postman" loading="eager" decoding="async" data-tooltip="Postman">
+      <img src="./assets/skills/docker-icon.svg" alt="Docker" loading="eager" decoding="async" data-tooltip="Docker">
+      <img src="./assets/skills/Vercel.svg" alt="Vercel" loading="eager" decoding="async" data-tooltip="Vercel">
+      <img src="./assets/skills/replit-icon.svg" alt="Replit" loading="eager" decoding="async" data-tooltip="Replit">
+      <img src="./assets/skills/gnu_bash-icon.svg" alt="Bash" loading="eager" decoding="async" data-tooltip="Bash">
+      <img src="./assets/skills/linux-icon.svg" alt="Linux" loading="eager" decoding="async" data-tooltip="Linux">
+      <img src="./assets/skills/Xcode.svg" alt="Xcode" loading="eager" decoding="async" data-tooltip="Xcode">
+      <img src="./assets/skills/Unity_Technologies_logo.svg" alt="Unity" loading="eager" decoding="async" data-tooltip="Unity">
+      <img src="./assets/skills/Figma.svg" alt="Figma" loading="eager" decoding="async" data-tooltip="Figma">
+      <img src="./assets/skills/sketchapp-icon.svg" alt="Sketch" loading="eager" decoding="async" data-tooltip="Sketch">
+      <img src="./assets/skills/tablerio-icon.svg" alt="Tabler Icons" loading="eager" decoding="async" data-tooltip="Tabler Icons">
+      <img src="./assets/skills/jsfiddle-icon.svg" alt="JSFiddle" loading="eager" decoding="async" data-tooltip="JSFiddle">
+    </div>
+  </div>
+</div>
+
+
+      </article>
+
+
+      <!--
+        - #PROJECTS
+      -->
+
+      <article class="portfolio" data-page="projects">
+
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Artificial Intelligence</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web Dev &amp; UI/UX</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Software Engineering &amp; Algorithms</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Artificial Intelligence</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web Dev &amp; UI/UX</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Software Engineering &amp; Algorithms</button>
+              </li>
+
+
+            </ul>
+
+          </div>
+
+
+          <ul class="project-list">
+
+            <li class="project-item project-item--tobby active" data-filter-item data-category="artificial intelligence" data-description="A Unity-based horror game featuring atmospheric levels and AI-driven enemies." data-link="https://github.com/Dhruvbam/Tobby-s-Terror" data-tech="Unity | C# | Game Design" data-card-aspect="1.2" data-modal-aspect="1.28" data-modal-image="./assets/projects/ttm.gif" data-modal-class="modal--tobby">
+              <a href="https://github.com/Dhruvbam/Tobby-s-Terror" class="project-link">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/projects/tt.gif" alt="Toby's Terror" loading="lazy">
+                </figure>
+                <h3 class="project-title">Toby's Terror</h3>
+                <p class="project-category">Unity Horror Game</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="artificial intelligence" data-description="Discord bot for Valorant players: match stats, notifications and utility commands." data-link="https://github.com/Dhruvbam/Valorant-Discord-Bot" data-tech="Node.js | Discord.js | Bots" data-card-aspect="1.2" data-modal-aspect="1.77" data-modal-image="./assets/projects/valom.gif" data-modal-alt="Valorant Bot Screenshot">
+              <a href="https://github.com/Dhruvbam/Valorant-Discord-Bot" class="project-link">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/projects/valo.gif" alt="Valorant Discord Bot" loading="lazy">
+                </figure>
+                <h3 class="project-title">Valorant Discord Bot</h3>
+                <p class="project-category">Gaming Assistant</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="artificial intelligence" data-description="An AI-powered interactive tool to learn algorithms with visualizations and quizzes." data-link="https://github.com/Dhruvbam/AlgoWhiz" data-tech="AI | OpenAI API | Python | Flask | Web Development" data-card-aspect="1.2" data-modal-aspect="1.55" data-modal-image="./assets/projects/algowhizm.gif" data-modal-alt="AlgoWhiz Demo">
+              <a href="https://github.com/Dhruvbam/AlgoWhiz" class="project-link">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/projects/algowhiz.gif" alt="AlgoWhiz" loading="lazy">
+                </figure>
+                <h3 class="project-title">AlgoWhiz</h3>
+                <p class="project-category">AI Educational Tool</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="software engineering & algorithms" data-description="A DTMF decoder project processing audio signals to decode keypad tones." data-link="https://github.com/Dhruvbam/Dual-Tone-Multi-Frequency-Decoder" data-tech="Python | NumPy | FFT | DSP" data-card-aspect="1.5" data-modal-aspect="1.7" data-modal-image="./assets/projects/dtmfm.gif">
+              <a href="https://github.com/Dhruvbam/Dual-Tone-Multi-Frequency-Decoder" class="project-link">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/projects/dtmf.gif" alt="DTMF Decoder" loading="lazy">
+                </figure>
+                <h3 class="project-title">DTMF Decoder</h3>
+                <p class="project-category">Signal Processing</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="software engineering & algorithms" data-description="Implementations and visualizations of core algorithmic problems and their analyses." data-link="https://github.com/Dhruvbam/Design-and-Analysis-of-Algorithms" data-tech="Algorithms | Java | Visualizations" data-card-aspect="1.5" data-modal-aspect="1.8" data-modal-image="./assets/projects/spm.gif">
+              <a href="https://github.com/Dhruvbam/Design-and-Analysis-of-Algorithms" class="project-link">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/projects/sp.gif" alt="Shortest Path" loading="lazy">
+                </figure>
+                <h3 class="project-title">Shortest Path Finder</h3>
+                <p class="project-category">Algorithm Implementation</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="software engineering & algorithms" data-description="The Course Sequencer is a Python application designed to optimize the order in which students should take courses based on their prerequisites. Utilizing Depth-First Search (DFS) and topological sorting within a directed acyclic graph (DAG), the tool models courses as nodes and prerequisites as directed edges. By performing a topological sort, the program generates an efficient course sequence that ensures all prerequisites are met, minimizing scheduling conflicts and streamlining academic planning. This project highlights skills in algorithm design, graph theory, and applying graph traversal techniques to real-world problems." data-link="#" data-tech="Python | Topological Sorting | Depth-First Search" data-card-aspect="1.5" data-modal-aspect="1.8" data-modal-image="./assets/projects/csm.gif" data-modal-alt="Course Sequencer Graph Topology">
+              <a href="#" class="project-link">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/projects/cs.gif" alt="Course Sequencer" loading="lazy">
+                </figure>
+                <h3 class="project-title">Course Sequencer</h3>
+                <p class="project-category">Graph Algorithms</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="web dev & ui/ux, software engineering & algorithms" data-description="Evaluating Search Engine Ranking Accuracy. This project involves creating algorithms and metrics to evaluate the reliability and relevance of search engine ranking systems. By analyzing user queries, click-through data, and relevance feedback, the project assesses strengths and weaknesses in search ranking logic, aiming to improve search results accuracy and trustworthiness." data-link="#" data-tech="Python | Information Retrieval | Algorithm Design" data-card-aspect="1.6" data-modal-aspect="1.85" data-modal-image="./assets/projects/sem.gif" data-modal-alt="Search Engine Reliability Metrics Visualization">
+              <a href="#" class="project-link">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/projects/se.gif" alt="Search Engine Reliability" loading="lazy">
+                </figure>
+                <h3 class="project-title">Search Engine Reliability</h3>
+                <p class="project-category">Information Retrieval</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web dev & ui/ux, software engineering & algorithms" data-description="A Java-based ticket booking application with seat selection and booking management." data-link="https://github.com/Dhruvbam/Ticket-Booking-System" data-tech="Java | Swing | Desktop App" data-card-aspect="1.6" data-modal-aspect="1.66" data-modal-image="./assets/projects/tbm.gif">
+              <a href="https://github.com/Dhruvbam/Ticket-Booking-System" class="project-link">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/projects/tb.gif" alt="Ticket Booking" loading="lazy">
+                </figure>
+                <h3 class="project-title">Ticket Booking System</h3>
+                <p class="project-category">Java Application</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web dev & ui/ux" data-description="A live weather web app using external APIs to display forecasts and current conditions." data-link="https://github.com/Dhruvbam/Live_Weather_App" data-tech="HTML | CSS | JavaScript | OpenWeather API" data-card-aspect="1.6" data-modal-aspect="1.8" data-modal-image="./assets/projects/weatherm.gif" data-modal-alt="Weather App Detail">
+              <a href="https://github.com/Dhruvbam/Live_Weather_App" class="project-link">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/projects/weather.gif" alt="Weather App" loading="lazy">
+                </figure>
+                <h3 class="project-title">Live Weather App</h3>
+                <p class="project-category">Web Application</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="web dev & ui/ux" data-description="Client website built for Texas Cane. Designed and developed a responsive, accessible site with clean information architecture, performance best practices, and basic SEO. Delivered end-to-end: build, styling, and deployment." data-link="https://www.texascane.org/" data-tech="HTML | CSS | JavaScript | Responsive Design | SEO | Client Project" data-card-aspect="1.4" data-modal-aspect="1.4" data-modal-image="./assets/projects/tc.gif" data-modal-alt="Texas Cane Full Preview">
+              <a href="https://www.texascane.org/" class="project-link">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/projects/tc.gif" alt="Texas Cane Website" loading="lazy">
+                </figure>
+                <h3 class="project-title">Texas Cane</h3>
+                <p class="project-category">Web Development</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web dev & ui/ux" data-description="An online expense tracker with categories, reports and persistent storage." data-link="https://github.com/Dhruvbam/Online-Expense-Tracker" data-tech="React | Firebase | JavaScript" data-card-aspect="1.4" data-modal-aspect="1.33" data-modal-image="./assets/projects/etm.gif">
+              <a href="https://github.com/Dhruvbam/Online-Expense-Tracker" class="project-link">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/projects/et.gif" alt="Expense Tracker" loading="lazy">
+                </figure>
+                <h3 class="project-title">Expense Tracker</h3>
+                <p class="project-category">Financial Tool</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="software engineering & algorithms" 
+            data-description="Operating Systems Design. These projects explore the design and implementation of core operating system components, including process scheduling, memory management, file systems, and concurrency control. By building and simulating modules, the work demonstrates skills in low-level programming and system architecture, reinforcing understanding of how operating systems manage hardware and software resources." data-link="#" data-tech="C | Operating Systems | Concurrency" data-card-aspect="1.4" data-modal-aspect="1.33" data-modal-image="./assets/projects/osm.gif" data-modal-alt="Operating Systems Projects">
+              <a href="#" class="project-link">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/projects/os.gif" alt="Operating Systems Projects" loading="lazy">
+                </figure>
+                <h3 class="project-title">Operating Systems Projects</h3>
+                <p class="project-category">Systems</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="software engineering & algorithms" data-description="Parallel Computing and System Programming. This project centers on the principles and practices of parallel and concurrent programming using multithreading, synchronization primitives, and secure resource sharing. It demonstrates how performance can be optimized by dividing computational tasks, implementing safe thread communication, and preventing race conditions." data-link="#" data-tech="C | Multithreading | Synchronization" data-card-aspect="1.33" data-modal-aspect="1.7" data-modal-image="./assets/projects/parm.gif" data-modal-alt="Parallel and Concurrent Programming Visualization">
+              <a href="#" class="project-link">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/projects/par.gif" alt="Parallel and Concurrent Programming" loading="lazy">
+                </figure>
+                <h3 class="project-title">Parallel & Concurrent Programming</h3>
+                <p class="project-category">Performance</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="software engineering & algorithms" data-description="Foundational Coding and Development in C. This lab focuses on building a strong foundation in programming through hands-on assignments in C, including basic syntax, control structures, functions, and debugging techniques. The project emphasizes writing clean, maintainable code and understanding the core principles of software development." data-link="#" data-tech="C | Procedural Programming | Debugging" data-card-aspect="1.33" data-modal-aspect="1.33" data-modal-image="./assets/projects/progm.gif" data-modal-alt="Programming Principles Lab Work">
+              <a href="#" class="project-link">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/projects/prog.gif" alt="Programming Principles Lab" loading="lazy">
+                </figure>
+                <h3 class="project-title">Programming Principles Lab</h3>
+                <p class="project-category">Foundations</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="software engineering & algorithms" data-description="Fundamental Concepts & Algorithm Implementation. This project showcases the implementation of classic data structures (such as arrays, linked lists, stacks, queues, and trees) and their corresponding algorithms, focusing on efficiency and foundational understanding for software development. The assignments emphasize using abstract data types and algorithmic problem-solving for practical applications." data-link="#" data-tech="C | Data Structures | Algorithms" data-card-aspect="1.33" data-modal-aspect="1.55" data-modal-image="./assets/projects/dsm.gif" data-modal-alt="Data Structures Implementations">
+              <a href="#" class="project-link">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/projects/ds.gif" alt="Data Structures Assignments" loading="lazy">
+                </figure>
+                <h3 class="project-title">Data Structures Assignments</h3>
+                <p class="project-category">Algorithms</p>
+              </a>
+            </li>
+
+          </ul>
+
+
+        </section>
+
+      </article>
+
+
+      <!--
+        - #Hobbies & Endeavours
+      -->
+
+      <article class="blog" data-page="hobbies">
+
+        <header>
+          <h2 class="h2 article-title">Hobbies &amp;<br>Endeavours</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item" data-cert="./assets/files/Hobbies/MUN.pdf" data-modal-image="./assets/images/Hobbies/MUNm.png" data-modal-alt="House Captain">
+              <a href="https://dmmun.carrd.co/" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/Hobbies/MUN.png" alt="Model United Nations" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Activities</p>
+                    <span class="dot"></span>
+                    <time datetime="2025-09-30">Sep 30, 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Model United Nations</h3>
+
+                  <p class="blog-text" style="overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical;">
+                    I participated in MUN conferences like CIMUN and ISMUN as both delegate and Chair. These experiences improved my public speaking, debating, and diplomatic skills while teaching me how to manage debates and draft resolutions.
+                  </p>
+                </div>
+
+              </a>
+            </li>
+
+
+            <li class="blog-post-item" data-cert="https://cathedral-school.com/houses/wilson/" data-cert-label="Visit School" data-cert-icon="school-outline" data-modal-image="./assets/images/Hobbies/HCm.png" data-modal-alt="House Captain">
+              <a href="https://dmcap.carrd.co/" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/Hobbies/HC.png" alt="Wilson House Captain" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Endeavours</p>
+                    <span class="dot"></span>
+                    <time datetime="2025-09-30">Sep 30, 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Wilson House Captain</h3>
+
+                  <p class="blog-text" style="overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical;">
+                    As the elected Captain of Wilson House (2019–2020) I led a team of over 200 students. I organized school events and initiatives to boost engagement and helped lead the house to win the Cock-House Trophy through teamwork and dedication.
+                  </p>
+                </div>
+
+              </a>
+            </li>
+
+
+
+            <li class="blog-post-item" data-cert="./assets/files/Hobbies/Drums.pdf" data-modal-image="./assets/images/Hobbies/Drumm.png" data-modal-alt="Playing Drums">
+              <a href="https://dmdrums.carrd.co/" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/Hobbies/Drums.png" alt="Music & Drums" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Hobbies</p>
+                    <span class="dot"></span>
+                    <time datetime="2025-09-30">Sep 30, 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Music & Drums</h3>
+
+                  <p class="blog-text" style="overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical;">
+                    My passion for music—especially playing drums—has been a source of relaxation and motivation. Drumming taught me discipline, time management, and perseverance. I also achieved the Initial Rock & Pop Drums certification from Trinity College London.
+                  </p>
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item" data-cert="./assets/files/Hobbies/NGO.pdf" data-modal-image="./assets/images/Hobbies/BVm.png" data-modal-alt="Charity Volunteer">
+              <a href="https://dmngo.carrd.co/" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/Hobbies/BV.png" alt="NGO Volunteer (Bhagya Vidhata Foundation)" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Volunteering</p>
+                    <span class="dot"></span>
+                    <time datetime="2025-09-30">Sep 30, 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Lessons from the Heart</h3>
+
+                  <p class="blog-text" style="overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical;">
+                    From 2017 to 2019 I volunteered at Bhagya Vidhata Foundation, teaching Adivasi children personal hygiene and recycling methods. Volunteering has been deeply meaningful and taught me the impact of community service.
+                  </p>
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item" data-cert="./assets/files/Hobbies/Canada.pdf" data-modal-image="./assets/images/Hobbies/AVm.png" data-modal-alt="House Captain"> <!-- certificate example -->
+              <a href="https://dmcanada.carrd.co/" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/Hobbies/AV.png" alt="Canada Leadership Exchange" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Hobbies</p>
+                    <span class="dot"></span>
+                    <time datetime="2025-09-30">Sep 30, 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Canada Leadership Exchange</h3>
+
+                  <p class="blog-text" style="overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical;">
+                    I participated in the International Cultural Student Exchange in Vancouver, living with a local family. This immersive experience helped me understand British Columbian culture and the nuances of cross-cultural communication. I completed the international education leadership program at School District 42 and even learned to fly a Cessna 150 at Pacific Rim Aviation Academy as part of this journey.
+                  </p>
+                </div>
+
+              </a>
+            </li>
+            
+
+            <li class="blog-post-item" data-cert="https://www.google.com/maps/d/viewer?mid=1iPHohlDUapZkfYix9MZwUJ0Yh7dL3MM&usp=sharing" data-cert-label="Locations" data-cert-icon="location-outline" data-modal-image="./assets/images/Hobbies/SCUBAm.png" data-modal-alt="Scuba Diving Exploration">
+              <a href="#" target="_blank" onclick="return false;">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/Hobbies/SCUBA.png" alt="Scuba Diving" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Hobbies</p>
+                    <span class="dot"></span>
+                    <time datetime="2025-09-30">Sep 30, 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Scuba Diving</h3>
+
+                  <p class="blog-text" style="overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical;">
+                    Scuba diving lets me explore an entirely different world—calm, weightless, and full of vibrant marine life. From controlling buoyancy to mindful breathing, it sharpened my focus and appreciation for ecosystems while building confidence in challenging environments.
+                  </p>
+                </div>
+
+              </a>
+            </li>
+            
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <!-- Updated map to show Texas Tech University (from provided link) -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.649931331528!2d-101.87680094653601!3d33.58530762705177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c413f31ec847%3A0x52db374b7b07849!2sTexas%20Tech%20University!5e0!3m2!1sen!2sus!4v1759465101279!5m2!1sen!2sus"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map showing Texas Tech University">
+            </iframe>
+          </figure>
+        </section>
+
+        <!-- 
+         - #contact form
+        -->
+
+    <section class="contact-form">
+      <h3 class="h3 form-title">Contact Form</h3>
+    
+      <form action="https://api.web3forms.com/submit" method="POST" class="form" data-form>
+        <input type="hidden" name="access_key" value="4a80e9f7-8bd1-4876-972d-afab10b877dd">
+        <input type="hidden" name="from_name" value="Dhruv's Portfolio">
+    
+        <div class="input-wrapper">
+          <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+          <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+        </div>
+    
+        <input type="text" name="subject" class="form-input" placeholder="Subject" required data-form-input>
+    
+        <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+    
+        <button class="form-btn" type="submit" disabled data-form-btn>
+          <ion-icon name="paper-plane"></ion-icon>
+          <span>Send Message</span>
+        </button>
+      </form>
+    </section>
+    <div class="separator"></div>
+    <!-- Site Footer -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-top">
+        <ul class="footer-contact-list">
+          <li class="footer-contact-item">
+            <a class="footer-icon" href="https://www.google.com/maps/search/?api=1&query=Lubbock,+Texas" target="_blank" rel="noopener" aria-label="Open location in Google Maps">
+              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+            </a>
+            <div class="footer-contact-text">
+              <p class="footer-heading"><a href="https://www.google.com/maps/search/?api=1&query=Lubbock,+Texas" target="_blank" rel="noopener">Location</a></p>
+              <p class="footer-text"><a href="https://www.google.com/maps/search/?api=1&query=Lubbock,+Texas" target="_blank" rel="noopener">Lubbock, Texas, USA</a></p>
+            </div>
+          </li>
+          <li class="footer-contact-item">
+            <a class="footer-icon" href="mailto:dmaniar@ttu.edu" aria-label="Send email">
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+            </a>
+            <div class="footer-contact-text">
+              <p class="footer-heading"><a href="mailto:dmaniar@ttu.edu">Email Me At</a></p>
+              <p class="footer-text"><a href="mailto:dmaniar@ttu.edu">dmaniar@ttu.edu</a></p>
+              <!-- <p class="footer-text"><a href="mailto:dhruvbam@gmail.com">dhruvbam@gmail.com</a></p> -->
+            </div>
+          </li>
+          <li class="footer-contact-item">
+            <a class="footer-icon" href="tel:8083999723" aria-label="Call phone number">
+              <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+            </a>
+            <div class="footer-contact-text">
+              <p class="footer-heading"><a href="tel:8083999723">Call Me At</a></p>
+              <p class="footer-text"><a href="tel:8083999723">808-399-9723</a></p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <!-- Footer social icons commented out per request
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/dhruv-maniar" class="footer-social-link" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+          <a href="https://github.com/Dhruvbam" class="footer-social-link" aria-label="GitHub" target="_blank" rel="noopener">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+          <a href="./assets/files/Full Resume.pdf" class="footer-social-link" aria-label="Resume PDF" target="_blank" rel="noopener" download>
+            <ion-icon name="document-text-outline"></ion-icon>
+          </a>
+        </div> -->
+        <p class="footer-copy footer-copy--center">
+          <span class="footer-copy-year">&copy; 2025</span>
+          <span class="footer-divider">|</span>
+          <span class="footer-copy-designed">Designed by <strong>Dhruv Maniar</strong></span>
+        </p>
+      </div>
+    </footer>
+    
+    
+
+    <div id="toast" class="toast"></div>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+       </article>
+
+    </div>
+
+  </main>
+
+
+
+  <!--
+    - custom js link
+  -->
+  <!--
+    - project modal (moved here so it overlays any active page)
+  -->
+  <div class="project-modal-container" data-project-modal-container>
+
+    <div class="overlay" data-project-overlay></div>
+
+    <section class="project-modal project-modal--full">
+
+      <button class="modal-close-btn" data-project-modal-close-btn>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="project-modal-media">
+        <img src="" alt="" data-project-modal-img>
+      </div>
+
+      <div class="project-modal-body">
+        <h4 class="h3 modal-title" data-project-modal-title></h4>
+
+        <div data-project-modal-text>
+          <p class="project-modal-desc"></p>
+        </div>
+
+        <div class="project-modal-tech" data-project-modal-tech></div>
+
+        <div class="project-modal-footer" data-project-modal-footer>
+          <button class="nav-btn nav-btn--prev" data-project-modal-prev-btn aria-label="Previous project">
+            <ion-icon name="arrow-back"></ion-icon>
+          </button>
+          <a href="#" target="_blank" class="form-btn project-modal-cta" data-project-modal-link>
+            <ion-icon name="logo-github"></ion-icon>
+            <span>GitHub</span>
+          </a>
+          <button class="nav-btn nav-btn--next" data-project-modal-next-btn aria-label="Next project">
+            <ion-icon name="arrow-forward"></ion-icon>
+          </button>
+        </div>
+
+      </div>
+
+    </section>
+
+  </div>
+
+  <!-- blog/hobbies modal -->
+  <div class="blog-modal-container" data-blog-modal-container>
+    <div class="overlay" data-blog-overlay></div>
+    <section class="project-modal project-modal--full blog-modal"> <!-- reuse styles -->
+      <button class="modal-close-btn" data-blog-modal-close-btn>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+      <div class="project-modal-media">
+        <img src="" alt="" data-blog-modal-img>
+      </div>
+      <div class="project-modal-body">
+        <h4 class="h3 modal-title" data-blog-modal-title></h4>
+        <div data-blog-modal-text>
+          <p class="project-modal-desc" data-blog-modal-desc></p>
+        </div>
+        <div class="project-modal-footer" data-blog-modal-footer>
+          <button class="nav-btn nav-btn--prev" data-blog-modal-prev-btn aria-label="Previous hobby/endeavour">
+            <ion-icon name="arrow-back"></ion-icon>
+          </button>
+          <a href="#" target="_blank" class="form-btn project-modal-cta" data-blog-modal-cert>
+            <ion-icon name="download-outline"></ion-icon>
+            <span>Certificates</span>
+          </a>
+          <button class="nav-btn nav-btn--next" data-blog-modal-next-btn aria-label="Next hobby/endeavour">
+            <ion-icon name="arrow-forward"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="./assets/js/script.js"></script>
+  <script>
+    // Make the location (timezone-tag) open the Contact page
+    (function(){
+      const shortcut = document.getElementById('contact-location-shortcut');
+      if(!shortcut) return;
+      function openContactPage(){
+        const navLinks = Array.from(document.querySelectorAll('.navbar-link'));
+        const contactBtn = navLinks.find(l => l.textContent.trim().toLowerCase() === 'contact');
+        if (contactBtn) {
+          // simulate the same behavior as clicking the navbar link
+            contactBtn.click();
+            // ensure focus moves for accessibility
+            contactBtn.focus();
+        } else {
+          // fallback: manually toggle articles
+          const pages = document.querySelectorAll('[data-page]');
+          pages.forEach(p => p.classList.toggle('active', p.getAttribute('data-page') === 'contact'));
+          navLinks.forEach(l => l.classList.toggle('active', l.textContent.trim().toLowerCase() === 'contact'));
+        }
+      }
+      shortcut.addEventListener('click', openContactPage);
+      shortcut.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          openContactPage();
+        }
+      });
+      // Visual cue that it's interactive (inline so no CSS edit needed)
+      shortcut.style.cursor = 'pointer';
+    })();
+  </script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!--
+    - experience calculator
+  -->
+  <script src="./assets/js/experience-calculator.js"></script>
+
+<!-- 
+ - chatbot 
+-->
+
+<!-- <script type='text/javascript'>
+  (function(I, L, T, i, c, k, s) {if(I.iticks) return;I.iticks = {host:c, settings:s, clientId:k, cdn:L, queue:[]};var h = T.head || T.documentElement;var e = T.createElement(i);var l = I.location;e.async = true;e.src = (L||c)+'/client/inject-v2.min.js';h.insertBefore(e, h.firstChild);I.iticks.call = function(a, b) {I.iticks.queue.push([a, b]);};})(window, 'https://cdn-v1.intelliticks.com/prod/common', document, 'script', 'https://app.intelliticks.com', 'QDSJoM9bye7eFGLsn_c', {});
+</script> -->
+
+
+</body>
+
+</html>
