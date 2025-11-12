@@ -1,5 +1,5 @@
 # Portfolio Website
-![Image](https://github.com/Dhruvbam/Portfolio-Website/blob/main/images/pw.png)
+![Image](https://github.com/Dhruvbam/Dhruv-s-Portfolio-Website/blob/main/assets/images/Mockups/all-devices-white.png)
 
 ## About
 This is a personal portfolio website designed to showcase my professional skills, projects, and experiences. The website is built with modern web technologies to highlight my expertise in front-end development and provide a platform for potential employers and collaborators to learn more about my work.
