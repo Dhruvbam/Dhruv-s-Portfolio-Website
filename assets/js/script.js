@@ -633,6 +633,70 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 })();
 
+// Handle URL hash on initial load: activate matching page or scroll/open item
+(function handleInitialHashOnLoad() {
+  document.addEventListener('DOMContentLoaded', function () {
+    try {
+      const rawHash = (location.hash || '').replace(/^#/, '').trim();
+      if (!rawHash) return;
+
+      const hash = rawHash.toLowerCase();
+      const navLinks = Array.from(document.querySelectorAll('[data-nav-link]'));
+      const pages = Array.from(document.querySelectorAll('[data-page]'));
+
+      // 1) If hash matches a data-page (article), activate it
+      const pageMatch = document.querySelector(`[data-page="${hash}"]`);
+      if (pageMatch) {
+        pages.forEach(p => p.classList.toggle('active', p === pageMatch));
+        navLinks.forEach(l => l.classList.toggle('active', l.textContent.trim().toLowerCase() === hash));
+        // ensure the page is visible and scrolled into view
+        setTimeout(() => { pageMatch.scrollIntoView({ behavior: 'auto', block: 'start' }); }, 20);
+        return;
+      }
+
+      // 2) If hash matches an element id (project/hobby/item), reveal its parent page and scroll/open
+      const target = document.getElementById(rawHash);
+      if (!target) return;
+
+      const ancestorPage = target.closest('[data-page]');
+      if (ancestorPage) {
+        pages.forEach(p => p.classList.toggle('active', p === ancestorPage));
+        const pageName = ancestorPage.getAttribute('data-page') || '';
+        navLinks.forEach(l => l.classList.toggle('active', l.textContent.trim().toLowerCase() === pageName));
+      }
+
+      // small delay to allow DOM/CSS to reveal the article, then scroll/focus and optionally open modal
+      setTimeout(() => {
+        try {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } catch (e) { /* ignore */ }
+
+        // accessibility: ensure focus so screen readers announce change
+        try {
+          target.setAttribute('tabindex', '-1');
+          target.focus({ preventScroll: true });
+        } catch (e) { /* ignore */ }
+
+        // If the target is a project or blog card, try to open its modal by 'clicking' its anchor.
+        // This uses existing delegated click handlers already present in your script.
+        try {
+          // prefer explicit project anchor
+          const projectAnchor = target.querySelector('a.project-link, a');
+          if (projectAnchor) {
+            // Only simulate the click — your existing handlers preventDefault and open modals.
+            projectAnchor.click();
+          }
+        } catch (e) {
+          // ignore any errors from synthetic click
+        }
+      }, 60);
+    } catch (err) {
+      // Fail silently — nothing critical if hash behavior doesn't work perfectly
+      // console.warn('Hash handling error:', err);
+    }
+  });
+})();
+
 
 
 
